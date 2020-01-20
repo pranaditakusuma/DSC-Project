@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bahasakuu</string>
+    <string name="peghargaan">PEGHARGAAN</string>
+    <string name="adu">ADU</string>
+    <string name="belajar">BELAJAR</string>
+    <string name="bab_1">BAB 1</string>
+    <string name="aku_dan_keluarga">Aku dan keluarga</string>
+    <string name="bab_2">BAB 2</string>
+    <string name="bab_3">BAB 3</string>
+    <string name="hewan_disekitar_kita">Hewan disekitar kita</string>
+    <string name="benda_benda_di_sekolah">Benda-benda di sekolah</string>
+    <string name="cari">cari</string>
+</resources>

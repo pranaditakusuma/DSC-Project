@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Soal">
+
+    <ImageView
+        android:id="@+id/hasilSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="17.1dp"
+        android:background="@drawable/jawaban_benar"
+        android:layout_marginStart="17.1dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilSatu"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_benar"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilDua"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_salah"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilEmpat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilTiga"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_benar"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilLima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilEmpat"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_salah"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilEnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilLima"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_sekarang"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilTujuh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilEnam"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_kosong"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilDelapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilTujuh"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_kosong"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilSembilan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilDelapan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_kosong"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+    <ImageView
+        android:id="@+id/hasilSepuluh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/hasilSembilan"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="3.8dp"
+        android:background="@drawable/jawaban_kosong"
+        android:layout_marginStart="3.8dp"
+        android:contentDescription="TODO" />
+
+
+    <TextView
+        android:id="@+id/noSoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/hasilSatu"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Soal no. 06"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="30.4dp"
+        android:textSize="20sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/soal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/noSoal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Terjemahkan kata berikut kedalam bahasa bali"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="26.6dp"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/soalKata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/soal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="64.7dp"
+        android:text="Saya"
+        android:textSize="44sp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/pilihanSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pilihan_jawaban"
+        app:layout_constraintTop_toBottomOf="@id/soalKata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="42dp"
+        android:text="Watashi"
+        android:textSize="34sp"/>
+
+    <Button
+        android:id="@+id/pilihanDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pilihan_jawaban"
+        app:layout_constraintTop_toBottomOf="@id/pilihanSatu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15.2dp"
+        android:text="Sampun"
+        android:textSize="34sp"/>
+
+    <Button
+        android:id="@+id/pilihanTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pilihan_jawaban"
+        app:layout_constraintTop_toBottomOf="@id/pilihanDua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15.2dp"
+        android:text="Tiang"
+        android:textSize="34sp"/>
+
+    <Button
+        android:id="@+id/pilihanEmpat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pilihan_jawaban"
+        app:layout_constraintTop_toBottomOf="@id/pilihanTiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15.2dp"
+        android:text="Ngajeng"
+        android:textSize="34sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/cek_jawaban"
+        android:layout_marginBottom="26.6dp"
+        android:text="Cek"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

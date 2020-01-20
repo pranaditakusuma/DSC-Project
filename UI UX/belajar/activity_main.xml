@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/penghargaan"
+        android:layout_width="360px"
+        android:layout_height="256px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="PEGHARGAAN"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/adu"
+        android:layout_width="360px"
+        android:layout_height="256px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="ADU"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/belajar"
+        android:layout_width="360px"
+        android:layout_height="256px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/penghargaan"
+        app:layout_constraintStart_toEndOf="@+id/adu"
+        android:text="BELAJAR"
+        android:textSize="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/experienceBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="80"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profil"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toStartOf="@+id/experienceBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profil" />
+
+    //BAB 1
+    <TextView
+        android:id="@+id/babSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabSatu"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="50px"
+        android:text="BAB 1"
+        android:textSize="29dp"/>
+
+    <TextView
+        android:id="@+id/judulBabSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        app:layout_constraintTop_toBottomOf="@+id/babSatu"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="50px"
+        android:text="Aku dan keluarga"
+        android:textSize="21.5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBabSatu"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="15"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabSatu"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabSatu"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        />
+
+    <Button
+        android:id="@+id/tombolBabSatu"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="979px"
+        android:layout_height="280px"
+        android:layout_marginTop="20px"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profil" />
+
+    //BAB 2
+    <TextView
+        android:id="@+id/babDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabDua"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="50px"
+        android:text="BAB 2"
+        android:textSize="29dp"/>
+
+    <TextView
+        android:id="@+id/judulBabDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        app:layout_constraintTop_toBottomOf="@+id/babDua"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="50px"
+        android:text="Hewan disekitar kita"
+        android:textSize="21.5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBabDua"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabDua"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabDua"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        />
+
+    <Button
+        android:id="@+id/tombolBabDua"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="979px"
+        android:layout_height="280px"
+        android:layout_marginTop="20px"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombolBabSatu" />
+
+    //BAB 3
+    <TextView
+        android:id="@+id/babTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabTiga"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="50px"
+        android:text="BAB 3"
+        android:textSize="29dp"/>
+
+    <TextView
+        android:id="@+id/judulBabTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        app:layout_constraintTop_toBottomOf="@+id/babTiga"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="50px"
+        android:text="Benda-benda di sekolah"
+        android:textSize="21.5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBabTiga"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabTiga"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabTiga"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        />
+
+    <Button
+        android:id="@+id/tombolBabTiga"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="979px"
+        android:layout_height="280px"
+        android:layout_marginTop="20px"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombolBabDua" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

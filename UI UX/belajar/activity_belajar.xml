@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".belajar"
+    tools:ignore="ExtraText">
+
+    <Button
+        android:id="@+id/penghargaan"
+        android:layout_width="137dp"
+        android:layout_height="97.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/peghargaan"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/adu"
+        android:layout_width="137dp"
+        android:layout_height="97.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/adu"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/belajar"
+        android:layout_width="137dp"
+        android:layout_height="97.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/penghargaan"
+        app:layout_constraintStart_toEndOf="@+id/adu"
+        android:text="@string/belajar"
+        android:textSize="15sp" />
+
+    <ProgressBar
+        android:id="@+id/experienceBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="80"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profil"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profil"
+        app:layout_constraintEnd_toStartOf="@+id/experienceBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gambarProfil"
+        tools:ignore="ContentDescription" />
+
+    //BAB 1
+    <TextView
+        android:id="@+id/babSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabSatu"
+        android:layout_marginTop="5.7dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/bab_1"
+        android:textSize="29sp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/judulBabSatu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        app:layout_constraintTop_toBottomOf="@+id/babSatu"
+        android:layout_marginTop="1.9dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/aku_dan_keluarga"
+        android:textSize="21.5sp"
+        android:layout_marginStart="19dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBabSatu"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="15"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabSatu"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabSatu"
+        app:layout_constraintStart_toStartOf="@id/tombolBabSatu"
+        />
+
+    <Button
+        android:id="@+id/tombolBabSatu"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="373dp"
+        android:layout_height="106.6dp"
+        android:layout_marginTop="7.6dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profil" />
+
+    //BAB 2
+    <TextView
+        android:id="@+id/babDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabDua"
+        android:layout_marginTop="5.7dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/bab_2"
+        android:textSize="29sp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/judulBabDua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        app:layout_constraintTop_toBottomOf="@+id/babDua"
+        android:layout_marginTop="1.9dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/hewan_disekitar_kita"
+        android:textSize="21.5sp"
+        android:layout_marginStart="19dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBabDua"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabDua"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabDua"
+        app:layout_constraintStart_toStartOf="@id/tombolBabDua"
+        />
+
+    <Button
+        android:id="@+id/tombolBabDua"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="373dp"
+        android:layout_height="106.6dp"
+        android:layout_marginTop="7.6dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombolBabSatu" />
+
+    //BAB 3
+    <TextView
+        android:id="@+id/babTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        app:layout_constraintTop_toTopOf="@+id/tombolBabTiga"
+        android:layout_marginTop="5.7dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/bab_3"
+        android:textSize="29sp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/judulBabTiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        app:layout_constraintTop_toBottomOf="@+id/babTiga"
+        android:layout_marginTop="1.9dp"
+        android:layout_marginLeft="19dp"
+        android:text="@string/benda_benda_di_sekolah"
+        android:textSize="21.5sp"
+        android:layout_marginStart="19dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBabTiga"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="@+id/tombolBabTiga"
+        app:layout_constraintEnd_toEndOf="@id/tombolBabTiga"
+        app:layout_constraintStart_toStartOf="@id/tombolBabTiga"
+        />
+
+    <Button
+        android:id="@+id/tombolBabTiga"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="373dp"
+        android:layout_height="106.6dp"
+        android:layout_marginTop="7.6dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tombolBabDua" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
